@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sound_boards">
+        <item>Monster</item>
+        <item>Ermittler</item>
+        <item>Waffen</item>
+    </string-array>
+    <string-array name="monsters">
+        <item>Hund von Tindalos</item>
+        <item>Kultist</item>
+        <item>Byakee</item>
+    </string-array>
+    <string-array name="ermittler">
+        <item>Jenny Barnes</item>
+        <item>Ashcan Pete</item>
+        <item>William Yorick</item>
+    </string-array>
+    <string-array name="waffen">
+        <item>Shotgun</item>
+        <item>.45er Automatik</item>
+        <item>Flammenwerfer</item>
+    </string-array>
+</resources>
