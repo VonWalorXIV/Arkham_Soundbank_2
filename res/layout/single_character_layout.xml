@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical" 
+    android:background="#000000">
  
     <ImageView
         android:id="@+id/portrait"
@@ -15,7 +16,7 @@
 	android:layout_width="wrap_content"
     android:layout_height="wrap_content"
 	android:textSize="24sp"
-	android:textColor="#000000"
+	android:textColor="#FFFFFF"
 	android:singleLine="false"
 	android:layout_gravity="center" />
     
@@ -26,6 +27,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:paddingTop="10px"
+        android:textColor="#FFFFFF"
         android:text="@string/scream_button" />
     
      <!--android:layout_width="wrap_content"-->
@@ -35,6 +37,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:paddingTop="10px"
+        android:textColor="#FFFFFF"
         android:text="@string/taunt_button" />	         
 
 </LinearLayout>
