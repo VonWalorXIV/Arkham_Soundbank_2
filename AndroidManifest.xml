@@ -24,6 +24,9 @@
         <activity 
             android:name=".SingleSoundBank" 
             android:label="Soundbank" />
+        <activity 
+            android:name=".SingleCharacter" 
+            android:label="SingleCharacter" />
     </application>
 
 </manifest>

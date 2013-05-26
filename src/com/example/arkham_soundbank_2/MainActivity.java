@@ -1,5 +1,6 @@
 package com.example.arkham_soundbank_2;
 
+
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -33,12 +34,20 @@ public class MainActivity extends ListActivity {
                
               // selected item 
               String selectedBank = ((TextView) view).getText().toString();
-               
-              // Launching new Activity on selecting single List Item
-              Intent i = new Intent(getApplicationContext(), SingleSoundBank.class);
-              // sending data to new activity
-              i.putExtra("selectedBank", selectedBank);
-              startActivity(i);
+              
+              if (!selectedBank.equals("TestAnsicht")){
+            	  // Launching new Activity on selecting single List Item
+            	  Intent i = new Intent(getApplicationContext(), SingleSoundBank.class);
+	              // sending data to new activity
+	              i.putExtra("selectedBank", selectedBank);
+	              startActivity(i);
+              }
+              else{
+            	  Intent i = new Intent(getApplicationContext(), SingleCharacter.class);
+	              // sending data to new activity
+	              i.putExtra("selectedBank", selectedBank);
+	              startActivity(i);
+              }
              
           }
         });
