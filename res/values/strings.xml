@@ -4,5 +4,7 @@
     <string name="app_name">Arkham Horror Soundbank</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="scream_button">Schrei</string>
+    <string name="taunt_button">Taunt</string>
 
 </resources>

@@ -26,7 +26,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:paddingTop="10px"
-        android:text="Schrei" />
+        android:text="@string/scream_button" />
     
      <!--android:layout_width="wrap_content"-->
     <Button
@@ -35,6 +35,6 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:paddingTop="10px"
-        android:text="Taunt" />	         
+        android:text="@string/taunt_button" />	         
 
 </LinearLayout>
