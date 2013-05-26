@@ -33,12 +33,12 @@ public class SingleCharacter extends Activity implements View.OnClickListener{
 		MediaPlayer player = null;
 		switch(v.getId()) {
 	        case R.id.btnErmittlerScream:
-	        	player = MediaPlayer.create(this, R.raw.ashcanpete);
+	        	player = MediaPlayer.create(this, R.raw.williamyorick);
 	        	player.start();
 	        // mediaplayer benutzen
 	        break;
 	        case R.id.btnErmittlerTaunt:
-	        	player = MediaPlayer.create(this, R.raw.williamyorick);
+	        	player = MediaPlayer.create(this, R.raw.ashcanpete);
 	        	player.start();
 	        // mediaplayer benutzen
 	        break;
