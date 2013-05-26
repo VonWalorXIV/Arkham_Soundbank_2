@@ -10,6 +10,11 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.app.Activity;
+
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 
 public class MainActivity extends ListActivity {
 
@@ -53,4 +58,43 @@ public class MainActivity extends ListActivity {
         });
         
     }
+	
+	/*
+	 * (non-Javadoc)
+	 * @see android.app.Activity#onCreateOptionsMenu(android.view.Menu)
+	 * 
+	 * Hier wurde Menü erstellt, das knallte dann bei Klick auf einen Menüeintrag
+	 * also erstmal wieder rausgenommen
+	 
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu)
+	{
+		MenuInflater inflater = getMenuInflater();
+		inflater.inflate(R.menu.options_menu, menu);
+		return true;
+	}
+
+	
+	 * This method will be called any time a user selects one of the options
+	 * on the menu. For the implementation, whichever button is clicked is
+	 * mapped onto the relevant activity.
+	 * @param item MenuItem
+	 * @return boolean
+	 
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item)
+	{
+		switch (item.getItemId())
+		{
+			case R.id.preferences:
+				startActivity(new Intent(this, EditPreferences.class));
+				return true;
+			default:
+				return super.onOptionsItemSelected(item);
+		}
+	}
+	
+	*/
+	
 }
