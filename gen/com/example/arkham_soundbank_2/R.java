@@ -35,10 +35,9 @@ public final class R {
         public static final int houndoftindalos=0x7f020005;
         public static final int ic_launcher=0x7f020006;
         public static final int jennybarnes=0x7f020007;
-        public static final int kangaroo=0x7f020008;
-        public static final int shotgun=0x7f020009;
-        public static final int splash=0x7f02000a;
-        public static final int williamyorick=0x7f02000b;
+        public static final int shotgun=0x7f020008;
+        public static final int splash=0x7f020009;
+        public static final int williamyorick=0x7f02000a;
     }
     public static final class id {
         public static final int action_settings=0x7f0b0009;
@@ -55,11 +54,12 @@ public final class R {
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int list_layout=0x7f030001;
-        public static final int list_row=0x7f030002;
-        public static final int single_character_layout=0x7f030003;
-        public static final int single_sound_bank_view=0x7f030004;
-        public static final int splash=0x7f030005;
+        public static final int ermittler_list=0x7f030001;
+        public static final int list_layout=0x7f030002;
+        public static final int list_row=0x7f030003;
+        public static final int single_character_layout=0x7f030004;
+        public static final int single_sound_bank_view=0x7f030005;
+        public static final int splash=0x7f030006;
     }
     public static final class menu {
         public static final int main=0x7f0a0000;

@@ -4,6 +4,7 @@ package com.example.arkham_soundbank_2;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.View;
 import android.widget.TextView;
 import android.media.MediaPlayer;
@@ -17,16 +18,54 @@ public class SingleCharacter extends Activity implements View.OnClickListener{
         
         this.setContentView(R.layout.single_character_layout);
         
-        ImageView portrait = (ImageView)findViewById(R.id.portrait);
-        portrait.setImageResource(R.drawable.ashcanpete);
+        Intent i = getIntent();
+        // getting attached intent data
+        String selectedErmittler = i.getStringExtra("selectedErmittler");
         
-        TextView beschreibung = (TextView)findViewById(R.id.beschreibung);
-        beschreibung.setText("Ashcan Pete");
+        if(selectedErmittler.equals("Aschan Pete")){
+        	
+	        ImageView portrait = (ImageView)findViewById(R.id.portrait);
+	        portrait.setImageResource(R.drawable.ashcanpete);
+	        
+	        TextView beschreibung = (TextView)findViewById(R.id.beschreibung);
+	        beschreibung.setText(selectedErmittler);
+	        
+	        Button screamButton = (Button)findViewById(R.id.btnErmittlerScream);
+	        screamButton.setOnClickListener(this);
+	        Button tauntButton = (Button)findViewById(R.id.btnErmittlerTaunt);
+	        tauntButton.setOnClickListener(this);
         
-        Button screamButton = (Button)findViewById(R.id.btnErmittlerScream);
-        screamButton.setOnClickListener(this);
-        Button tauntButton = (Button)findViewById(R.id.btnErmittlerTaunt);
-        tauntButton.setOnClickListener(this);
+        }
+        else if(selectedErmittler.equals("Jenny Barnes")){
+        	
+	        ImageView portrait = (ImageView)findViewById(R.id.portrait);
+	        portrait.setImageResource(R.drawable.jennybarnes);
+	        
+	        TextView beschreibung = (TextView)findViewById(R.id.beschreibung);
+	        beschreibung.setText(selectedErmittler);
+	        
+	        Button screamButton = (Button)findViewById(R.id.btnErmittlerScream);
+	        screamButton.setOnClickListener(this);
+	        Button tauntButton = (Button)findViewById(R.id.btnErmittlerTaunt);
+	        tauntButton.setOnClickListener(this);
+        
+        }
+        else if(selectedErmittler.equals("William Yorick")){
+        	
+	        ImageView portrait = (ImageView)findViewById(R.id.portrait);
+	        portrait.setImageResource(R.drawable.williamyorick);
+	        
+	        TextView beschreibung = (TextView)findViewById(R.id.beschreibung);
+	        beschreibung.setText(selectedErmittler);
+	        
+	        Button screamButton = (Button)findViewById(R.id.btnErmittlerScream);
+	        screamButton.setOnClickListener(this);
+	        Button tauntButton = (Button)findViewById(R.id.btnErmittlerTaunt);
+	        tauntButton.setOnClickListener(this);
+        
+        }
+        
+        
 	}
 	
 	public void onClick(View v) {

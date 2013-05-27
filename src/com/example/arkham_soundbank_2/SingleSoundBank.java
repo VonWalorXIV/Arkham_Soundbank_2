@@ -34,9 +34,7 @@ public class SingleSoundBank extends ListActivity{
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.setContentView(R.layout.single_sound_bank_view);
-        
-        String [] selected;
-        
+                
         Intent i = getIntent();
         // getting attached intent data
         String selectedBank = i.getStringExtra("selectedBank");

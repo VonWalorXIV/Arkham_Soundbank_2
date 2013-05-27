@@ -30,6 +30,9 @@
         <activity 
             android:name=".SingleCharacter" 
             android:label="SingleCharacter" />
+        <activity 
+            android:name=".Ermitller_Liste" 
+            android:label="Ermitller Liste" />
     </application>
 
 </manifest>

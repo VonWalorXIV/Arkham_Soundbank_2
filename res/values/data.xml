@@ -4,7 +4,7 @@
         <item>Monster</item>
         <item>Ermittler</item>
         <item>Waffen</item>
-        <item>TestAnsicht</item>
+        
     </string-array>
     <string-array name="monsters">
         <item>Hund von Tindalos</item>

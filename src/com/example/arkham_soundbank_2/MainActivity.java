@@ -39,19 +39,26 @@ public class MainActivity extends ListActivity {
                
               // selected item 
               String selectedBank = ((TextView) view).getText().toString();
+  	          		
               
-              if (!selectedBank.equals("TestAnsicht")){
+              if (!selectedBank.equals("Ermittler")){
             	  // Launching new Activity on selecting single List Item
             	  Intent i = new Intent(getApplicationContext(), SingleSoundBank.class);
 	              // sending data to new activity
 	              i.putExtra("selectedBank", selectedBank);
 	              startActivity(i);
               }
-              else{
+              /*
+              else if (selectedBank.equals("Testansicht")){
             	  Intent i = new Intent(getApplicationContext(), SingleCharacter.class);
 	              // sending data to new activity
 	              i.putExtra("selectedBank", selectedBank);
 	              startActivity(i);
+              }
+              */
+              else if (selectedBank.equals("Ermittler")){
+            	  Intent i = new Intent(getApplicationContext(), Ermitller_Liste.class);
+            	  startActivity(i);
               }
              
           }
