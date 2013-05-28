@@ -115,7 +115,12 @@ public class SingleSoundBank extends ListActivity{
             s = new Sound();
             s.setDescription("Shotgun");
             s.setIconResourceId(R.drawable.shotgun);
-            s.setSoundResourceId(R.raw.shotgun);
+            s.setSoundResourceId(R.raw.shotgun_shot_reload);
+            mSounds.add(s);
+            s = new Sound();
+            s.setDescription("TEST");
+            s.setIconResourceId(R.drawable.automatik45);
+            s.setSoundResourceId(R.raw.shotgun_shot_reload);
             mSounds.add(s);
             s = new Sound();
             s.setDescription("FLammenwerfer");

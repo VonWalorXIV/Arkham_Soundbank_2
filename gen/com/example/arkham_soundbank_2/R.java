@@ -75,8 +75,9 @@ public final class R {
         public static final int kitten=0x7f050006;
         public static final int rooster=0x7f050007;
         public static final int shotgun=0x7f050008;
-        public static final int wilhelmscream=0x7f050009;
-        public static final int williamyorick=0x7f05000a;
+        public static final int shotgun_shot_reload=0x7f050009;
+        public static final int wilhelmscream=0x7f05000a;
+        public static final int williamyorick=0x7f05000b;
     }
     public static final class string {
         public static final int action_settings=0x7f080001;
